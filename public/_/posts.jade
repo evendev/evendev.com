@@ -1,5 +1,6 @@
 .posts
-  each post, slug in public.blog.data
-    .post
-      | &bull; 
-      a.post-title(href='/blog/#{ slug }')= post.title
+  each post, slug in public.blog._data
+    if (slug !== 'index')
+      .post
+        | &bull; 
+        a.post-title(href='/blog/#{ slug }')= post.title
