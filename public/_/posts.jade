@@ -1,0 +1,5 @@
+.posts
+  each post, slug in public.blog.data
+    .post
+      | &bull; 
+      a.post-title(href='/blog/#{ slug }')= post.title

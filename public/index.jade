@@ -1,0 +1,40 @@
+h1.logo
+  a(href='/')
+    |<span class="l-even">Even</span><span class="l-dev">Dev</span>
+
+section.intro
+  .section-text
+    :markdown
+      Hello! I'm Steve Jamesson, a full-stack **web developer** and **designer**.
+
+section.html-css
+  .section-text
+    :markdown
+      I write beautiful **HTML**, **CSS**, and **JavaScript** with care and love.
+
+section.design
+  .section-text
+    :markdown
+      I **design** simple, clean, and effective **user interfaces** for the web.
+
+section.apps
+  .section-text
+    p
+      | I help <strong>relieve pain</strong> for small business with <strong>smart, bespoke <a href="#">web applications</a></strong>.
+
+section.cms
+  .section-text
+    p 
+      | I help businesses <strong>strategize</strong> and implement <strong>content management systems</strong>.
+ 
+ section.teach
+  .section-text
+    p
+      | I provide training and teaching services. And I'd love to speak at your conference.
+
+section.blogger
+  .section-text
+    p 
+      | I <strong>write</strong> in my <a href="/blog">blog</a>.
+  .section-body
+    != partial('_/posts')

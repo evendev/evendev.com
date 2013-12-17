@@ -1,0 +1,71 @@
+@color-dark-grey: #444;
+@color-primary: #008AB8;
+// @color-complement: #FF6633;
+@color-complement: #c23000;
+
+
+@font-family-headings: "Alegreya Sans", sans-serif;
+@font-family-sans: "Open Sans", sans-serif;
+
+body{
+  font-family: @font-family-sans;
+  line-height: 1.6333;
+  text-align: center;
+  margin: 0; padding: 0;
+  background: #f4f4f7;
+  color: @color-dark-grey;
+}
+a {
+  color: @color-primary;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: @font-family-headings;
+}
+h1{
+  font-size: 65px;
+  line-height: 1.2em;
+  // border-bottom: #CCC solid 1px;
+  padding: 1em 0;
+}
+
+/** Logo **/
+.logo {
+  font-size: 6em;
+  padding: 0.15em 0;
+  a:hover, a:active, a:focus {
+    text-decoration: none;
+  }
+}
+.l-even, a.l-even {
+  color: @color-dark-grey;
+}
+.l-dev, a .l-dev {
+  color: @color-complement;
+}
+
+/** Sections **/
+section {
+  background-color: @color-complement;
+  color: white;
+  padding: 3em 0;
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  a:hover, a:focus, a:active {
+    text-decoration: none;
+  }
+}
+.section-text {
+  font-size: 1.4em;   
+}
+.mini-section {
+  padding: 1em;
+  .section-text {
+    font-size: 1em;
+  }
+}
