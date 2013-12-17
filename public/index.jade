@@ -2,45 +2,53 @@ h1.logo
   a(href='/')
     |<span class="l-even">Even</span><span class="l-dev">Dev</span>
 
-section.intro
-  .section-text
+section.block#intro
+  .section-intro
     :markdown
       Hello! I'm Steve Jamesson, a full-stack **web developer** and **designer**.
+  .section-body
+    p I enjoy crafting full-stack solutions
+    p: a(href='#hire-me') Get in touch &raquo;
 
-section.html-css
-  .section-text
+section.block#html-css
+  .section-intro
     :markdown
       I write beautiful **HTML**, **CSS**, and **JavaScript** with care and love.
+  .section-body
+    p HTML
+    p CSS
+    p JavaScript
 
-section.design
-  .section-text
+section.block.design
+  .section-intro
     :markdown
       I **design** simple, clean, and effective **user interfaces** for the web.
 
-section.apps
-  .section-text
+section.block.apps
+  .section-intro
     p
       | I help <strong>relieve pain</strong> for small business with <strong>smart, bespoke <a href="#">web applications</a></strong>.
 
-section.cms
-  .section-text
+section.block.cms
+  .section-intro
     p 
       | I help businesses <strong>strategize</strong> and implement <strong>content management systems</strong>.
  
- section.teach
-  .section-text
+ section.block.teach
+  .section-intro
     p
       | I provide training and teaching services. And I'd love to speak at your conference.
 
-section.blogger
-  .section-text
+section.block.blogger
+  .section-intro
     p 
       | I <strong>write</strong> in my <a href="/blog">blog</a>.
   .section-body
     != partial('_/posts')
+    p: a(href='/blog') All posts &raquo;
 
-section.elsewhere
-  .section-text
+section.block.elsewhere
+  .section-intro
     p You can find me elsewhere, too.
   .section-body
     a(href='http://evendeven.com') My Personal Blog

@@ -1,6 +1,8 @@
 @color-dark-grey: #444;
+@color-offwhite: #f4f4f7;
+@color-near-black: #191919;
 @color-primary: #008AB8;
-// @color-complement: #FF6633;
+@color-complement-light: #FF6633;
 @color-complement: #c23000;
 
 
@@ -12,12 +14,15 @@ body{
   line-height: 1.6333;
   text-align: center;
   margin: 0; padding: 0;
-  background: #f4f4f7;
+  background: @color-offwhite;
   color: @color-dark-grey;
 }
 a {
   color: @color-primary;
   text-decoration: none;
+}
+a:visited {
+  color: darken(@color-primary, 10);
 }
 a:hover, a:active, a:focus {
   text-decoration: underline;
@@ -25,10 +30,9 @@ a:hover, a:active, a:focus {
 h1, h2, h3, h4, h5, h6 {
   font-family: @font-family-headings;
 }
-h1{
+h1 {
   font-size: 65px;
   line-height: 1.2em;
-  // border-bottom: #CCC solid 1px;
   padding: 1em 0;
 }
 
@@ -40,18 +44,84 @@ h1{
     text-decoration: none;
   }
 }
-.l-even, a.l-even {
+.l-even, a .l-even {
   color: @color-dark-grey;
 }
 .l-dev, a .l-dev {
   color: @color-complement;
 }
+.l-even, .l-dev {
+  transition: color 0.25s ease;
+}
+.logo a:hover, .logo a:focus, .logo a:active {
+  .l-dev {
+    color: @color-dark-grey;
+  }
+  .l-even {
+    color: @color-complement;
+  }
+}
+
+/** Nav **/
+.nav {
+  background: @color-near-black;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0.25em 1em 0.25em;
+  text-align: right;
+  width: 100%;
+  a {
+    color: @color-offwhite;
+    margin: 0 0.5em;
+    &:hover, &:active, &:focus {
+      color: @color-complement;
+      text-decoration: none;
+    }
+  }
+}
 
 /** Sections **/
-section {
+section.block {
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  a:hover, a:focus, a:active {
+    text-decoration: none;
+  }
+  .section-intro {
+    background-color: @color-complement;
+    color: white;
+    font-size: 1.4em;
+    padding: 1em 0;
+  }
+  .section-body {
+    background: @color-near-black;
+    color: white;
+    padding: 3em 0;
+  }
+}
+#intro {
+  // position: relative;
+  .section-body {
+    background-image: url(img/coast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    color: black;
+    min-height: 360px;
+  }
+}
+
+/** Blog **/
+.post-intro {
   background-color: @color-complement;
   color: white;
-  padding: 3em 0;
+  padding: 1em;
   a {
     color: white;
     text-decoration: underline;
@@ -60,12 +130,22 @@ section {
     text-decoration: none;
   }
 }
-.section-text {
-  font-size: 1.4em;   
+
+
+/** Screen contexts **/
+
+@media (min-width: 1em) {
+
 }
-.mini-section {
-  padding: 1em;
-  .section-text {
-    font-size: 1em;
-  }
+
+@media (min-width: 40em) {
+
+}
+
+@media (min-width: 64em) {
+  
+}
+
+@media (min-width: 80em) {
+  
 }
