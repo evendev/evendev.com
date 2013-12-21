@@ -1,60 +1,129 @@
-h1.logo
-  a(href='/')
-    |<span class="l-even">Even</span><span class="l-dev">Dev</span>
+section.block.block-orange#intro
+  .block-intro
+    .container Hello! I'm Steve, a full-stack 
+      strong web developer
+      |  and 
+      strong designer
+      |.
 
-section.block#intro
-  .section-intro
-    :markdown
-      Hello! I'm Steve Jamesson, a full-stack **web developer** and **designer**.
-  .section-body
-    p I enjoy crafting full-stack solutions
-    p: a(href='#hire-me') Get in touch &raquo;
+div(style='height:3em;')
 
-section.block#html-css
-  .section-intro
-    :markdown
-      I write beautiful **HTML**, **CSS**, and **JavaScript** with care and love.
-  .section-body
-    p HTML
-    p CSS
-    p JavaScript
+.container
+  .row
+    .col-xs-12.col-sm-6.col-md-4.col-md-offset-2
+      h2 Front-End Developer
+      p I'm primarily a 
+        strong front-end developer
+        |, my favorite area of the web. 
+      p I'm an expert with 
+        strong HTML
+        |, 
+        strong CSS
+        |, and 
+        strong JavaScript
+        |.
+    .col-xs-12.col-sm-6.col-md-4
+      h2 Content Management 
+      p I integrate 
+        strong your designs
+        |  into 
+        strong your CMS
+        |  of choice.
+      p I work with you to 
+        strong develop a strategy 
+        |  for your content management needs.
+  .row
+    .col-xs-12.col-sm-6.col-md-4.col-md-offset-2
+      h2 Optimization
+      p I optimize front-end code and assets to make 
+        strong pages load 
+        |  as 
+        strong fast as possible
+        |.
+    .col-xs-12.col-sm-6.col-md-4
+      h2 Web Apps
+      p I offer 
+        strong pain relief
+        |  for businesses with 
+        strong smart
+        |,  
+        strong bespoke web applications
+        |.
 
-section.block.design
-  .section-intro
-    :markdown
-      I **design** simple, clean, and effective **user interfaces** for the web.
+div(style='height:3em;')
 
-section.block.apps
-  .section-intro
-    p
-      | I help <strong>relieve pain</strong> for small business with <strong>smart, bespoke <a href="#">web applications</a></strong>.
+section.block.block-orange#blogger
+  .block-intro
+    .container I blog on 
+      a(href='/blog') web development
+      |  and on 
+      a(href='http://evendeven.com/') life in general
+      |.
 
-section.block.cms
-  .section-intro
-    p 
-      | I help businesses <strong>strategize</strong> and implement <strong>content management systems</strong>.
+.container
+  .row
+    .col-xs-12.col-sm-6.col-md-4.col-md-offset-2
+      h2 Recent Web Entries
+      != partial('_/posts')
+    .col-xs-12.col-sm-6.col-md-4
+      h2 Recent Life Entries
+      != partial('_/posts')
+
+//- section.block.block-dark#html-css
+//-   .container
+//-     .block-intro
+//-       :markdown
+//-         I write beautiful **HTML**, **CSS**, and **JavaScript** with care and love.
+//-     .section-body
+//-       p HTML
+//-       p CSS
+//-       p JavaScript
+
+//- section.block.block-blue#design
+//-   .container
+//-     .block-intro
+//-       p I 
+//-         strong design
+//-         |  simple, clean, and effective 
+//-         strong user interfaces
+//-         |  for the web.
+
+//- section.block.block-orange#apps
+//-   .container
+//-     .block-intro
+//-       p
+//-         | I help <strong>relieve pain</strong> for small business with <strong>smart, bespoke <a href="#">web applications</a></strong>.
+
+//- section.block.block-dark#cms
+//-   .container
+//-     .block-intro
+//-       p 
+//-         | I help businesses <strong>strategize</strong> and implement <strong>content management systems</strong>.
  
- section.block.teach
-  .section-intro
-    p
-      | I provide training and teaching services. And I'd love to speak at your conference.
+//- section#teach
+//-   .container
+//-     .section-intro
+//-       p
+//-         | I provide training and teaching services. And I'd love to speak at your conference.
 
-section.block.blogger
-  .section-intro
-    p 
-      | I <strong>write</strong> in my <a href="/blog">blog</a>.
-  .section-body
-    != partial('_/posts')
-    p: a(href='/blog') All posts &raquo;
+//- section#blogger
+//-   .container
+//-     .section-intro
+//-       p 
+//-         | I <strong>write</strong> in my <a href="/blog">blog</a>.
+//-     .section-body
+//-       != partial('_/posts')
+//-       p: a(href='/blog') All posts &raquo;
 
-section.block.elsewhere
-  .section-intro
-    p You can find me elsewhere, too.
-  .section-body
-    a(href='http://evendeven.com') My Personal Blog
-    br
-    a(href='http://facebook.com/steve.jamesson') Facebook
-    br
-    a(href='http://twitter.com/evendeven') Twitter
-    br
-    a(href='#') LinkedIn
+//- section#elsewhere
+//-   .container
+//-     .section-intro
+//-       p You can find me elsewhere, too.
+//-     .section-body
+//-       a(href='http://evendeven.com') My Personal Blog
+//-       br
+//-       a(href='http://facebook.com/steve.jamesson') Facebook
+//-       br
+//-       a(href='http://twitter.com/evendeven') Twitter
+//-       br
+//-       a(href='#') LinkedIn

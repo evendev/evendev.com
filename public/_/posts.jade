@@ -1,6 +1,7 @@
-.posts
+ul.posts
   each post, slug in public.blog._data
     if (slug !== 'index')
-      .post
-        | &bull; 
+      li.post
         a.post-title(href='/blog/#{ slug }')= post.title
+        |  
+        span.post-date (#{ post.pubdate })

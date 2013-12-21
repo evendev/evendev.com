@@ -1,0 +1,109 @@
+/** Import bootstrap components **/
+
+@import "_imports";
+
+
+/** Custom vars **/
+
+// colors
+@color-even-offwhite: #f4f4f7;
+@color-even-dark-grey: #444;
+@color-even-near-black: #191919;
+@color-even-blue: #008AB8;
+@color-even-orange-light: #FF6633;
+@color-even-orange: #c23000;
+
+// fonts
+@font-family-even-headings: "Alegreya Sans", sans-serif;
+@font-family-even-sans: "Open Sans", sans-serif;
+
+/** Bootstrap overrides **/
+
+// brand
+@brand-primary: @color-even-dark-grey;
+
+
+// basics
+@body-bg: @color-even-offwhite;
+@text-color: @color-even-dark-grey;
+@link-color: @color-even-blue;
+@link-hover-color: @color-even-orange;
+
+// fonts
+@font-family-sans-serif: @font-family-even-sans;
+@headings-font-family: @font-family-even-headings;
+@headings-font-weight: 800;
+
+/** Base **/
+
+body {
+  font-size: 1.6em;
+  padding-top: 50px;
+}
+
+/** Nav **/
+.navbar {
+ .l-even {
+    color: @color-even-offwhite;
+  }
+  .logo:hover .l-dev {
+    color: @color-even-offwhite;
+  }
+}
+
+/** Logo / Brand **/
+
+.logo {
+  font-weight: bold;
+}
+.brand a:hover, .brand a:active, .brand a:focus {
+  text-decoration: none;
+}
+.l-even { color: @color-even-dark-grey; }
+.l-dev { color: @color-even-orange; }
+.l-even, .l-dev { transition: color 0.25s ease; }
+.logo:hover {
+  .l-dev { color: @color-even-dark-grey; }
+  .l-even { color: @color-even-orange; }
+}
+
+
+/** Masthead **/
+
+.masthead {
+  h1 { font-size: 4em; }
+  @media (min-width: @screen-xs-min) {
+    h1 { font-size: 6em; }
+  }
+  padding: 3em 0;
+  text-align: center;
+}
+
+
+/** Section Blocks **/
+
+.block {
+  padding: 3em 0;
+  text-align: center;
+  &, a {
+    color: @color-even-offwhite;
+  }
+  a {
+    text-decoration: underline;
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+  }
+  .block-intro {
+    font-size: 1.4em;
+  }
+}
+.block-orange {
+  background-color: @color-even-orange;
+}
+.block-blue {
+  background-color: @color-even-blue;
+}
+.block-dark {
+  background-color: @color-even-near-black;
+}
