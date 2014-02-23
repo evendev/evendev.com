@@ -1,0 +1,9 @@
+{
+  "name": "evendev.com",
+  "private": true,
+  "devDependencies": {
+    "load-grunt-tasks": "~0.3.0",
+    "grunt": "~0.4.2",
+    "grunt-rsync": "~0.3.0"
+  }
+}
