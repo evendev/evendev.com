@@ -2,7 +2,22 @@
   "index": {
     "title": "Blog about web application design and development, Front-End Coding, JavaScript"
   },
+  "static-sites": {
+    "layout": "../_post",
+    "title": "Static Websites are the Greatest Things since Static Websites",
+    "pubdate": "20140223",
+    "brief": "The web was originally static. Then we got clever with templates and CMSs. These days, a static site could be your best bet.",
+    "tags": [
+      "static",
+      "node.js",
+      "WordPress",
+      "grunt",
+      "PHP",
+      "JavaScript"
+    ]
+  },
   "intro-to-grunt": {
+    "layout": "../_post",
     "title": "Intro to Grunt",
     "pubdate": "20131217",
     "brief": "A brief introduction to using Grunt, an example for optimizing images.",

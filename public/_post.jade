@@ -1,0 +1,19 @@
+!= partial('_/functions')
+!!!
+!= partial('_/head')
+  body
+    != partial('_/header')
+    .main
+      article
+        .block.block-orange
+          header
+            .container
+              .row
+                .col-xs-12.col-sm-12.col-md-12.col-lg-12.text-center
+                  h1= title
+        .article-content.row
+          .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
+            != yield
+    != partial('_/nav')
+    != partial('_/footer')
+    != partial('_/scripts')

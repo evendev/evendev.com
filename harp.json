@@ -2,6 +2,7 @@
   "globals": {
     "site": {
       "name": "EvenDev",
+      "description": "Web Consultant",
       "author": "Steve Jamesson"
     }
   }
