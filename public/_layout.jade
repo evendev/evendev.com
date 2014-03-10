@@ -4,7 +4,7 @@
   body
     != partial('_/header')
     .main
-      != yield
+      .container
+        != yield
     != partial('_/nav')
-    != partial('_/footer')
     != partial('_/scripts')

@@ -1,0 +1,14 @@
+!= partial('../_/functions')
+!!!
+!= partial('../_/head')
+  body
+    != partial('../_/header')
+    .main
+      .container
+        article
+          header
+            h1.article-title= title
+          .article-content
+            != yield
+    != partial('../_/nav')
+    != partial('../_/scripts')

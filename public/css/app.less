@@ -38,17 +38,7 @@
 
 body {
   font-size: 1.6em;
-  padding-top: 50px;
-}
-
-/** Nav **/
-.navbar {
- .l-even {
-    color: @color-even-offwhite;
-  }
-  .logo:hover .l-dev {
-    color: @color-even-offwhite;
-  }
+  padding: 0 1em;
 }
 
 /** Logo / Brand **/
@@ -56,8 +46,12 @@ body {
 .logo {
   font-weight: bold;
 }
-.brand a:hover, .brand a:active, .brand a:focus {
-  text-decoration: none;
+.logo-link {
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
 }
 .l-even { color: @color-even-dark-grey; }
 .l-dev { color: @color-even-orange; }
@@ -67,54 +61,34 @@ body {
   .l-even { color: @color-even-orange; }
 }
 
-
-/** Masthead **/
-
-.masthead {
-  h1 { font-size: 4em; }
-  @media (min-width: @screen-xs-min) {
-    h1 { font-size: 6em; }
+/** Site header **/
+.site-header {
+  .logo {
+    font-size: 3em;
   }
-  padding: 3em 0;
-  text-align: center;
-}
-
-
-/** Section Blocks **/
-
-.block {
-  padding: 3em 0;
-  text-align: center;
-  &, a {
-    color: @color-even-offwhite;
-  }
-  a {
-    text-decoration: underline;
-    &:hover, &:active, &:focus {
-      text-decoration: none;
-    }
-  }
-  &.block-minor {
-    font-size: 0.8em;
-    padding: 1em 0;
-    margin-top: 1em;
-  }
-  .block-intro {
-    font-size: 1.4em;
-  }
-}
-.block-orange {
-  background-color: @color-even-orange;
-}
-.block-blue {
-  background-color: @color-even-blue;
-}
-.block-dark {
-  background-color: @color-even-near-black;
+  padding: 2em 0;
+  // text-align: center;
 }
 
 /** Posts **/
+.posts {
 
-.article-content {
-  margin: 1em 0;
+}
+.posts-big-list {
+  // font-size: 1.8em;
+  // text-align: center;
+  margin: 0; padding: 0;
+  li { list-style: none; }
+  .post-title { font-weight: bold; }
+  .post-date {
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
+/** Device Contexts **/
+
+@media (min-width: @screen-sm-min) {
+  // Site Header
+
 }
