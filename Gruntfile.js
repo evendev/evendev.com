@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     rsync: {
       options: {
         args: ['--verbose'],
-        exclude: ['.git'],
+        exclude: ['.git', '.DS_Store'],
         recursive: true
       },
       prod: {
