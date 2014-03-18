@@ -1,6 +1,10 @@
 {
   "index": {
     "layout": "../_layout",
-    "title": "Blog about web application design and development, Front-End Coding, JavaScript"
+    "title": "Blog"
+  },
+  "published-with-harp": {
+    "title": "Static Site, published with Harp",
+    "pubdate": "2014-03-18T11:14-05:00"
   }
 }

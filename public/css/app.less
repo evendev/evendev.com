@@ -41,7 +41,9 @@ body {
 }
 
 /** Logo / Brand **/
-.logo {
+.brand {
+  // font-family: @font-family-even-headings;
+  font-family: "Alegreya Sans";
   font-weight: bold;
 }
 .logo-link {
@@ -71,11 +73,12 @@ body {
 .posts {
 }
 .posts-archive {
-  margin: 0; padding: 0;
-  li { list-style: none; }
+  &, li { list-style: none; margin: 0; padding: 0; }
   .post-title { font-weight: bold; }
   .post-date {
     display: block;
+    color: @text-muted;
+    font-size: @font-size-small;
     margin-bottom: 1em;
   }
 }
@@ -85,9 +88,17 @@ body {
   .article-title {
     // margin: 2em 0;
   }
+  .article-meta {
+    font-size: @font-size-small;
+  }
 }
 
 /** Device Contexts **/
+@media (max-width: @screen-xs-max) {
+  .article-title {
+    font-size: 2em;
+  }
+}
 
 @media (min-width: @screen-sm) {
   .site-header {

@@ -1,0 +1,14 @@
+doctype xml
+rss(version="2.0")
+  channel
+    title= site.name
+    link= site.productionUrl
+    description= site.description
+    - each post, slug in public.blog._data
+      if (slug !== 'index')
+        item
+          title= post.title
+          description <![CDATA[!{ partial('blog/' + slug) }]]>
+          pubDate= post.pubdate
+          link #{ site.productionUrl }/blog/#{ slug }.html
+          guid(isPermaLink="true") #{ site.productionUrl }/blog/#{ slug }.html

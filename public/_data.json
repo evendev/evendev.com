@@ -2,5 +2,8 @@
   "index": {
     "title": "Web Developer, Strategic Web Consultant, Front-End Coder & Optimizer",
     "description": "Offering web application design and development, strategic web consulting and planning, user interface design, front-end coding and optimization"
+  },
+  "feed": {
+    "layout": false
   }
 }

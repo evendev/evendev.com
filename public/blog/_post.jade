@@ -1,0 +1,11 @@
+article(itemscope, itemtype="http://schema.org/BlogPosting")
+  header
+    h1(itemprop="name").article-title= title
+  footer
+    p.article-meta.text-muted
+      | Published 
+      time(itemprop="datePublished", datetime="#{ pubdate }", pubdate) #{ pubdate }
+      | by 
+      span(itemprop="author") #{ site.author }
+  .article-content
+    != yield
