@@ -5,7 +5,7 @@ article(itemscope, itemtype="http://schema.org/BlogPosting")
     p.article-meta.text-muted
       | Published 
       time(itemprop="datePublished", datetime="#{ pubdate }", pubdate) #{ pubdate }
-      | by 
+      |  by 
       span(itemprop="author") #{ site.author }
   .article-content
     != yield

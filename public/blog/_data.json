@@ -3,6 +3,10 @@
     "layout": "../_layout",
     "title": "Blog"
   },
+  "gulp-looks-refreshing": {
+    "title": "Gulp looks quite refreshing",
+    "pubdate": "2014-03-20T12:21-05:00"
+  },
   "published-with-harp": {
     "title": "Static Site, published with Harp",
     "pubdate": "2014-03-18T11:14-05:00"
