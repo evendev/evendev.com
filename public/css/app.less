@@ -6,6 +6,8 @@
 /** Custom vars **/
 
 // colors
+@black: #000;
+@white: #fff;
 @color-even-offwhite: #f4f4f7;
 @color-even-dark-grey: #444;
 @color-even-near-black: #191919;
@@ -82,8 +84,7 @@ body {
     margin-bottom: 1em;
   }
 }
-
-
+// single post page
 .page-article {
   .article-title {
     // margin: 2em 0;
@@ -91,6 +92,12 @@ body {
   .article-meta {
     font-size: @font-size-small;
   }
+}
+
+/** Blocks/wells/panels **/
+.panel-bright {
+  background-color: @color-even-orange;
+  color: @white;
 }
 
 /** Device Contexts **/

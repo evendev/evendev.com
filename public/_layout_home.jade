@@ -1,0 +1,14 @@
+!= partial('_/functions')
+!!!
+!= partial('_/head')
+  body
+    .container
+      .row
+        .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
+          != partial('_/header')
+    != partial('_/welcome')
+    .container
+      .row
+        .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
+          != yield
+    != partial('_/scripts')

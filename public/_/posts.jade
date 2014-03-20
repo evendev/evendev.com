@@ -1,7 +1,7 @@
 ul(class='posts #{ listClass }')
   each post, slug in public.blog._data
     if (slug !== 'index')
-      li.post
+      li.post()
         a.post-title(href='/blog/#{ slug }')= post.title
         |  
-        span.post-date #{ post.pubdate }
+        time.post-date(datetime="#{ post.pubdate }", pubdate) #{ post.pubdate }
