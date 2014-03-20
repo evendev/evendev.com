@@ -8,7 +8,6 @@
       var $el = $(el);
       var elPubdate = $el.attr('datetime');
       var mDate = moment(elPubdate).format('YYYY-MM-DD');
-      console.log(mDate);
       $el.html(mDate + '');
     });  
   };
