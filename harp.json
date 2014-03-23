@@ -4,7 +4,11 @@
       "name": "EvenDev",
       "description": "Web Development Blog",
       "author": "Steve Jamesson",
-      "productionUrl": "http://www.evendev.com"
+      "productionUrl": "http://www.evendev.com",
+      "socialUrls": {
+        "facebook": "http://www.facebook.com/steve.jamesson",
+        "twitter": "http://twitter.com/evendeven"
+      }
     }
   }
 }

@@ -4,6 +4,10 @@
     "title": "Web Developer & Consultant",
     "description": "Offering web application design and development, strategic web consulting and planning, user interface design, front-end coding and optimization"
   },
+  "about": {
+    "title": "About EvenDev",
+    "description": "Steve Jamesson is a freelance web developer, strategist, consultant, and generalist."
+  },
   "feed": {
     "layout": false
   }

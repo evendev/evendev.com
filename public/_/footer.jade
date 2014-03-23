@@ -1,3 +1,7 @@
-.block.block-minor.block-dark
-  .container
-    p &copy; #{ new Date().getFullYear() } Steve Jamesson
+footer.site-footer
+  p &copy; #{ new Date().getFullYear() } 
+    a(href='#{ site.productionUrl }') #{ site.name }
+  p
+    a(href='/') Home
+    |  - 
+    a(href='/about.html') About
