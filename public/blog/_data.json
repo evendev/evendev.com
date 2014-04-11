@@ -3,6 +3,10 @@
     "layout": "../_layout",
     "title": "Blog"
   },
+  "first-impressions-of-atom-editor": {
+    "title": "First impressions of GitHub's Atom editor",
+    "pubdate": "2014-04-11T01:53-05:00"
+  },
   "gulp-looks-refreshing": {
     "title": "Gulp looks quite refreshing",
     "pubdate": "2014-03-20T12:21-05:00"
