@@ -1,7 +1,8 @@
 footer.site-footer
-  p &copy; #{ new Date().getFullYear() } 
+  p: a(href='#{ site.newsletterSignupUrl }', target="_blank") Subscribe to my newsletter
+  p &copy; #{ new Date().getFullYear() }
     a(href='#{ site.productionUrl }') #{ site.name }
   p
     a(href='/') Home
-    |  - 
+    |  -
     a(href='/about.html') About
