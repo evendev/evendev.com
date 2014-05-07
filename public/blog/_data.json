@@ -3,6 +3,10 @@
     "layout": "../_layout",
     "title": "Blog"
   },
+  "rsync-deploys-with-gulp": {
+    "title": "Deploying via rsync with Gulp",
+    "pubdate": "2014-05-07T01:13-5:00"
+  },
   "first-impressions-of-atom-editor": {
     "title": "First impressions of GitHub's Atom editor",
     "pubdate": "2014-04-11T01:53-05:00"
