@@ -13,7 +13,7 @@ Just use [`rsyncwrapper`][2] directly in the `gulpfile.js`. It's really quite ea
 
 Here's an example of how I'm handling it. See `rsyncwrapper`'s [documentation][2] for info on options.
 
-~~~.language-javascript
+~~~javascript
 // gulpfile.js
 var rsync = require('rsyncwrapper').rsync;
 var gulp = require('gulp');
@@ -39,7 +39,7 @@ I typically use a `secrets.json` or `secrets.yml` file to store credentials, hos
 
 Here's a quick example:
 
-~~~.language-javascript
+~~~javascript
 // secrets.json
 {
   "servers": {
@@ -52,7 +52,7 @@ Here's a quick example:
 
 Then just `require()` `secrets.json` in `gulpfile.js` and reference it in the deploy task.
 
-~~~.language-javascript
+~~~javascript
 // gulpfile.js
 var secrets = require('./secrets.json');
 
