@@ -1,9 +1,9 @@
 footer.site-footer
   p
     a(href='#{ site.newsletterSignupUrl }', target="_blank") Subscribe to my newsletter
-  p &copy; #{ new Date().getFullYear() }  
+  p &copy; #{ new Date().getFullYear() } 
     a(href='#{ site.productionUrl }') #{ site.name }
-  p
-    a(href='/') Home
-    |  -
-    a(href='/about.html') About
+  ul.list-inline
+    li: a(href='/') Home
+    li: a(href='/about.html') About
+    li: a(href='#{ site.socialUrls.twitter }') @evendeven
