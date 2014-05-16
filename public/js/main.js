@@ -7,9 +7,9 @@
     pubdate.each(function(i, el) {
       var $el = $(el);
       var elPubdate = $el.attr('datetime');
-      var mDate = moment(elPubdate).format('YYYY-MM-DD');
+      var mDate = moment(elPubdate).fromNow();
       $el.html(mDate + '');
-    });  
+    });
   };
 
   $(document).ready(function() {
