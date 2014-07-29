@@ -2,6 +2,7 @@
 [2]: https://github.com/jedrichards/rsyncwrapper "rsyncwrapper"
 [3]: https://github.com/jedrichards/grunt-rsync "grunt-rsync"
 [4]: http://gruntjs.com/ "Grunt"
+[5]: https://www.npmjs.org/package/yargs "yargs"
 
 I've been using [`grunt-rsync`][3] for deploying static builds to my servers via a quick [grunt][4] task. But I've recently switched to [Gulp][1] as my build system, and I wanted to also use a similar quick gulp task for deploying.
 
@@ -66,4 +67,6 @@ Again, pretty easy.
 
 ## Multiple deploy targets
 
-I haven't yet figured out how to handle multiple targets, mostly because I haven't had to deploy to different servers quite yet, but that'll be coming up soon, I'm sure.
+~~I haven't yet figured out how to handle multiple targets, mostly because I haven't had to deploy to different servers quite yet, but that'll be coming up soon, I'm sure.~~
+
+**Update**: See Nathan's comment below on how to handle multiple targets, a nice solution using [yargs][5].
